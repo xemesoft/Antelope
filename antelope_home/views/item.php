@@ -10,14 +10,14 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <title><?php echo $title ?></title>
+    <title><?php echo $page_title ?></title>
 </head>
 <body>
 <p>This is a item detail page</p>
 
-<?php foreach ($item as $item_item): ?>
+<?php foreach ($item_detail as $item): ?>
 
-    <h3><?php echo $item_item['title'] ?></h3>
+    <h3><?php echo $item['title'] ?></h3>
 
 <?php endforeach ?>
 </body>

@@ -13,9 +13,9 @@ class Item_model extends CI_Model {
         $this->load->database();
     }
 
-    public function get_item()
+    public function get_item_detail()
     {
-        $query = $this->db->get('item');
+        $query = $this->db->get('item_detail');
         return $query->result_array();
     }
 }

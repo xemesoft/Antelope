@@ -17,8 +17,8 @@ class Item extends CI_Controller {
 
     function index()
     {
-        $data['title'] = "Item Detail Page";
-        $data['item'] = $this->item_model->get_item();
+        $data['page_title'] = "Item Detail Page";
+        $data['item_detail'] = $this->item_model->get_item_detail();
         $this->load->view('item.php', $data);
     }
 
