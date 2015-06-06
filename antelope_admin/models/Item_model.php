@@ -2,8 +2,8 @@
 /**
  * Created by PhpStorm.
  * User: xeme
- * Date: 2015/6/4
- * Time: 13:54
+ * Date: 2015/6/5
+ * Time: 15:55
  */
 
 class Item_model extends CI_Model {
@@ -19,4 +19,13 @@ class Item_model extends CI_Model {
         return $query->result_array();
     }
 
+    public function add_item()
+    {
+        $data = array(
+            'uid' => rand(0,1000000),
+            'title' => $this->input->post('title'),
+        );
+
+        return $this->db->insert('item_detail', $data);
+    }
 }
