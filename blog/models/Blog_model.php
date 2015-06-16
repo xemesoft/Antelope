@@ -6,6 +6,7 @@
  * Time: 20:28
  */
 
-class Blog_model {
+class Blog_model extends CI_Model {
+
 
 }
