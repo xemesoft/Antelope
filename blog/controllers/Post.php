@@ -6,7 +6,7 @@
  * Time: 下午4:27
  */
 
-class Blog  extends CI_Controller {
+class Post extends CI_Controller {
 
     public function index(){
         $this->load->view('blog');

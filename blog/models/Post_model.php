@@ -6,7 +6,9 @@
  * Time: 20:28
  */
 
-class Blog_model extends CI_Model {
-
+class Post_model extends CI_Model {
+    public function insert_post(){
+        
+    }
 
 }
